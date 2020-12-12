@@ -1,0 +1,101 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: #f1f1f1;
+    height: 100%;
+}  
+/* Set black background color, white text and some padding */
+    footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+} 
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+    height: auto;
+    padding: 15px;
+}
+.row.content {height:auto;} 
+ }
+.sub{
+	background: green;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    width: 98%;
+    height: 33px;
+    font-size: 17px;
+	border-radius: 4px;
+}
+.back{
+	background:white;
+}
+.inline{
+	margin:0 auto;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.logo{
+	height:50px;
+	width:50px;
+	padding-bottom: 21px;
+}
+.padd{
+	padding:15px;
+}
+.num-frnd{
+	color:white;
+	font-size:22px!important;
+}
+.subs{
+	background: green;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    height: 33px;
+    font-size: 17px;
+	border-radius: 4px;
+	margin: 24px;
+	width: 100px;
+	outline:none;
+}
+.flex{
+	display: inline-flex;
+    padding-bottom: 0!important;
+}
+.red{
+	background:red;
+}
+.margin{
+	width: 30%;
+    margin-left: 35%;
+}
+.width{
+	width: 148px;
+}
+.line{
+	margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 2px solid grey;
+}
+.red{
+	background:red;
+}
+.welc{
+	color:white;
+}
+.Signup{
+	background-color:#FF9C2A;
+}
