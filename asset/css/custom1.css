@@ -1,0 +1,138 @@
+.logo{
+	    margin-top: -18px;
+}
+ul li{
+	    display: -webkit-inline-box;
+		padding-inline-end:27px;
+	    padding-top: 10px;
+		text-decoration:none;
+}
+h2{
+	margin-left: 6px;
+    margin-top: -26px
+}
+.modal{
+	    right: 1000!important;
+}
+.modal-open .modal{
+	overflow-y: hidden!important;
+}
+.pull-right a{
+    font-size: 21px;
+    color: white;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.con{
+	  color: white; 
+	  background:#FF9C2A;	 
+}
+a:hover{
+	text-decoration:underline!important;
+	color:brown!important;
+}
+.add{
+	float: right;
+    height: 38px;
+    width: 89px;
+    margin-top: 14px;
+    background: red;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+	outline:none;
+}
+.total{
+	border-right: 2px solid #b9574b;
+}
+.first{
+    
+    margin-top: -34px;
+}
+.mob{
+	color: #b9574b;
+    font-size: 21px;
+    color: white;
+}
+.user{
+    margin-top: 55px;
+	color: #b9574b;
+    font-size: 21px;
+	color: white;
+}
+.input{
+	border: 2px solid #b9574b!important;
+	width:50%!important;
+}
+.cart{
+	float: right;
+    height: 38px;
+    width: 89px;
+	background: red;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+	outline:none;
+}
+ 
+.second{
+	margin-top: 15px;
+}
+i:hover{
+	color:green;
+	
+}
+.add_menu{
+	height: 38px;
+    width: 89px;
+	background: #B9574B;
+	color:white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+	outline:none;
+	
+}
+.cp{
+	line-height: 3;
+    font-size: 23px;
+}
+.item-plus{
+	font-size:23px!important;
+}
+.login_btn{
+	height: 38px;
+    width: 89px;
+	background: #B9574B;
+	color:white;
+    font-weight: bold;
+    font-size: 18px;
+	outline:none;
+	border: 1px solid #b9574b;
+    border-radius: 15px;
+}
+.red{
+	color:red;
+}
+.wid{
+	width:100%!important;
+}
+.top{
+	margin-top:0;
+}
+.mod{
+    width: 400px!important;
+    margin: 30px auto;
+}
+.btn_tot{
+	float: right;
+    margin-right: 43px;
+    border: 1px solid #b9574b;
+    width: 100px;
+    background: #b9574b;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+	height: 39px;
+    font-weight: bold;
+}

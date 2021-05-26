@@ -1,3 +1,7 @@
+.adr{
+	padding: 29px;
+    border-radius: 15%;
+}
 .container-fluid{
 	overflow-y:scroll;
 	scroll-behavior:smooth;
@@ -7,17 +11,19 @@
 .mynav {
 	height:80px;
 	background-color:#FF9C2A;
-	position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
+}
+.sb1{
+	margin-left: 156px;
+	background-color: white;
+    color: black;
 }
  label.logo{
-	 font-size:35px;
-	color:white;
-	font-weight:bold;
-	line-height:60px;
-	padding:0 50px;
+	    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 6px;
+    padding: 0 50px;
 	
 }
 
@@ -127,14 +133,14 @@
 .overtext h2{
 	position: absolute;
     color: #f8f9fa;
-    top: 20%;
+    top: 34%;
     left: 18%;
     font-size: 65px;
 }
 .overtext p{
 	position: absolute;
     color: #f8f9fa;
-    top: 35%;
+    top: 42%;
     left: 31%;
     font-size: 37px;
 	 
@@ -162,6 +168,12 @@
 }
 .rmenu h3{
 	color:white;
+	margin-bottom: 56px;
+}
+
+.table thead th,.table td,.table td a{color:white !important;}
+.white{
+	color:white !important;
 }
 .addr {
     width: 238px;

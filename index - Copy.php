@@ -4,17 +4,15 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="asset/css/custom1.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+  
 </head>
 
-    <body onload="all_func()">
+    <body>
 	   <div class="container-fluid">
 	      <div class="row mynav" >
 		       <div class="col-md-3">
-			     <label class="logo">Sampoorna</label>
+			     <label class="logo">Samparm</label>
 			   </div>
 			   <div class="col-md-9 mynav" id="myTopnav">
 			     <ul>
@@ -30,7 +28,7 @@
 				</a>
 			   </div>
 		  </div>
-		  <section id="Home" class="mt80">
+		  <section id="Home">
 		  <div class="row ">
 		     <div class="col-md-12">
 			     <div class="overlap">
@@ -38,7 +36,7 @@
 					 <div class="overtext">
 					  <h2>Contactless Dining Experience</h2>
 					  <p>Enjoy Seamless contact-Free Services</p>
-					 
+					 <input type="submit"  class="btn btn-light bttn" value="OUR MENU  ">
 					 </div>
 		        </div>
 		     </div>
@@ -55,7 +53,7 @@
 	      </div>  
 		  <div class="row">
 		       <div class="col-md-6 boxleft jumbotron">
-			     <div class="jumbobox adr">
+			     <div class="jumbobox">
 					   <h4>OPENING HOURS</h4>
 					   <h6>MONDAY TO SUNDAY</h6>
 					   <h6> 7:00 AM to 1O:00 PM</h6><br>  
@@ -113,107 +111,12 @@
 	      </div>
 		  </section>
 		  <section id="Resto">
-		  <div class="row jumbotron white">
-		  <div class="col-md-12 text-center rmenu">
-			     <h3> Resto Menu</h3>
+		  <div class="row jumbotron">
+		      <div class="col-md-12 text-center rmenu">
+			     <h3 style="margin-bottom: 56px;"> Resto Menu</h3>
+				 
 		      </div>
-			<div class="col-md-4 first">
-				<!--<form method="post" onsubmit="return myfun2()" action="include/execution.php">-->
-					<div class="form-group user ">
-						<p>Table Code:</p>
-						<input name="username" id="user" type="text" class="form-control input" placeholder="Table Code">
-						<span id="warn1" class="red"></span>
-					</div>
-					<!--<div class="form-group mob " >
-						<p>Mobile:</p>
-						<input name="mobile" id="mob" type="mobile" class="form-control input" placeholder="Mobile">
-						<span id="warn2" class="red"></span>
-					</div>-->
-					<div id="show_cart_added"></div>
-					<div id="show_cart"></div>
-					<!--table class="table">
-						<thead>
-						  <tr>
-							<th>id</th>
-							<th>Gravy</th>
-							<th>Price</th>
-							<th>Quantity</th>
-							<th>Total</th>
-						</thead>
-						<tbody>
-						 // <?php  
-						  // $attnum=1;
-						  // $conn= mysqli_connect("localhost","root","","food_services");
-						  // if($conn-> connect_error){
-							  // die("Connection failed:". $conn-> connect_error);
-						  // }
-						  
-						  // $sql = "SELECT id,name,price,quantity from cart";
-						  // $result= $conn-> query($sql);
-						  
-						  // if($result-> num_rows >0){
-							  // $total=0;
-							  // 	
-								 // echo '<tr><td>'. $row['id'].'</td><td>'. $row['name'].'</td><td>'. $row['price'].'</td><td>'. $row['quantity'].'</td><td>'.$row['quantity'] * $row['price'].'</td></tr>'; 
-								 // $total=$row['quantity'] * $row['price']+$total;
-								   
-							  // }
-						  // }
-						  // ?>
-							</tbody>
-						 </table>
-						 <input type="hidden" class="btn_tot" name="total" value="<?php echo $total;?>">
-						 <div class="form-group">
-							<input class="login_btn" name="submit" type="submit" class="btn btn-primary btn-block" value="submit" >
-						</div>-->
-					<!--</form>-->
-				</div>
-				<div class="col-md-2 total">
-					<h2>Total + GST</h2>
-					<?php
-						$conn= mysqli_connect("localhost","root","","food_services");
-						$sql = mysqli_query($conn,"SELECT SUM(total) AS value_sum from cart");
-						$row=mysqli_fetch_assoc($sql);
-						echo $row['value_sum'];						
-					?>
-				</div>		
-			<div class="col-md-6 second ">
-			<div id="show_text"></div>
-			<div id="show_data" ></div>
-			
-			
-				<!--<table class="table">
-					<thead>
-					  <tr>
-						<th>Gravy</th>
-						<th>Price</th>
-						<th>Cart</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  // <?php 
-					  // $exeid=0;
-					  // $conn= mysqli_connect("localhost","root","","food_services");
-					  // if($conn-> connect_error){
-						  // die("Connection failed:". $conn-> connect_error);
-					  // }
-					  
-					  // $sql = "SELECT id,name,price from menu";
-					  // $result= $conn-> query($sql);
-					  
-					  // if($result-> num_rows >0){
-						  // while($row = $result->fetch_assoc()){
-							  // echo '<tr><td>'. $row['name'].'</td><td>'. $row['price'].'</td> <td><a href="include/execution.php?name='.$row['name'].'&price='.$row['price'].'&exeid=1">+</a></td></tr>';
-							  
-						  // }
-					  // }
-					  // ?>
-					</tbody>
-				  </table-->
-				  
-			</div>
-			<input type="submit" class="btn btn-secondary sb1" name="sub" value="Generate Invoice">
-		</div>
+		  </div>
 		  </section>
 		  <section id="About">
 		  <div class="row abt1">
@@ -269,7 +172,7 @@
 						Shivajinagar ,Pune
 						Maharashtra</p>
 						<p>999-7777-000
-						Sampoorna@gmail.com</p>
+						Samparn@gmail.com</p>
 					   <p>10AM - 11PM</p>
 				  </div>
 			  </div>		      
@@ -283,8 +186,8 @@
 		 </div>
 		 <div class="row footer">
 				<div class="col-md-5">
-				<h5>Sampoorna</h5>
-				<p>Copyright © 2020 Sampoorna | Credits All  right reserved </p>
+				<h5>Samparn</h5>
+				<p>Copyright © 2020 Samparm | Credits All  right reserved </p>
 				</div>
 				<div class="col-md-2 text-center">
 				<p>DESIGN BY</p>
@@ -299,108 +202,6 @@
 	      </div>
 	   </div>
     </body>
-<script>
-	function myfun(){
-		var n= document.getElementById("name").value;
-		var z= document.getElementById("price").value;
-	
-	if(!n) {
-		document.getElementById("warn4").innerHTML="* please fill name";
-		return false;
-	}
-	if(!z) {
-		document.getElementById("warn3").innerHTML="* please fill price";
-		return false;
-	}
-	}
-function myfun2(){
-		var n= document.getElementById("user").value;
-		var z= document.getElementById("mob").value;
-	
-	if(!n) {
-		document.getElementById("warn1").innerHTML="* please fill username";
-		return false;
-	}
-	if(!z) {
-		document.getElementById("warn2").innerHTML="* please fill mobile no";
-		return false;
-	}
-	}
-	function check(){
-		var name = document.getElementById("name").value;
-		var price = document.getElementById("price").value;
-		$.ajax({
-			url:'include/exec.php',
-			method:'POST',
-			data:{
-				name:name,price:price
-			},
-			success:function(responsedata){
-				document.getElementById("show_text").innerHTML=responsedata;
-				all();
-			}
-		});
-	}
-	function all(){
-		$.ajax({
-			url:'include/exec1.php',
-			success:function(responsedata){
-				document.getElementById("show_data").innerHTML=responsedata;
-			}
-		});
-	}
-	function all1(name,price){
-		$.ajax({
-			url:'include/exec3.php',
-			method:'POST',
-			data:{
-				name:name,price:price
-			},
-			success:function(responsedata){
-				document.getElementById("show_cart").innerHTML=responsedata;
-				all2();
-			}
-		});
-	}
-	function all2(){
-		$.ajax({
-			url:'include/exec2.php',
-			success:function(responsedata){
-				document.getElementById("show_cart_added").innerHTML=responsedata;
-			}
-		});
-	}
-	function all3(name,price){
-		$.ajax({
-			url:'include/exec5.php',
-			method:'POST',
-			data:{
-				name:name,price:price
-			},
-			success:function(responsedata){
-				document.getElementById("show_cart").innerHTML=responsedata;
-				all_func();
-			}
-		});
-	}
-	function deletedata(id){
-		$.ajax({
-			url:'include/exec4.php',
-			method:'POST',
-			data:{
-				id:id
-			},
-			success:function(responsedata){
-				document.getElementById("show_text").innerHTML=responsedata;
-				all();
-			}
-		});
-	}
-	function all_func(){
-	all();
-	all2();
-	}
-</script>
+
 <script src="asset/js/jquery.min.js"></script>
 <script src="asset/js/bootstrap.min.js"></script>
-</html>

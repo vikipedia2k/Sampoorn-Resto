@@ -6,7 +6,7 @@
 				<hr class="line"><img src="asset/image/select-logo-15.jpg" class="center"><hr class="line">
 			</div>
 				<h3 class="text-center">Login</h3>
-				<form method="post" action="include/execution.php" onsubmit="return myfun()">
+				<form method="post" action="include/execution1.php" onsubmit="return myfun()">
 					<div class="form-group">
 						<input name="email" type="email" class="form-control" placeholder="Email">
 					</div>
